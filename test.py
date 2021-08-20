@@ -6,8 +6,8 @@ options=Options()
 options.add_argument('--headless')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
-driver=webdriver.Chrome('./chromedriver', options=options)
+driver=webdriver.Chrome('/selenium/chromedriver', options=options)
 
 driver.get('https://selenium-python.readthedocs.io/getting-started.html')
 
-driver.save_screenshot('https://python.org')
+driver.save_screenshot('screenshot.png')
